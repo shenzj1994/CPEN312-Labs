@@ -1,0 +1,76 @@
+--------------------------------------------------------------------------------------
+Slow Model Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 0.515 ns
+From           : IN4
+To             : 74161:inst1|f74161:sub|87
+From Clock     : --
+To Clock       : CLOCK_50
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 14.891 ns
+From           : ROM64x16:inst4|altsyncram:altsyncram_component|altsyncram_nk71:auto_generated|q_a[6]
+To             : Y
+From Clock     : CLOCK_50
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 13.123 ns
+From           : IN4
+To             : Y
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 0.956 ns
+From           : IN2
+To             : 74161:inst1|f74161:sub|9
+From Clock     : --
+To Clock       : CLOCK_50
+Failed Paths   : 0
+
+Type           : Slow Model Clock Setup: 'CLOCK_50'
+Slack          : 14.909 ns
+Required Time  : 50.00 MHz ( period = 20.000 ns )
+Actual Time    : 196.43 MHz ( period = 5.091 ns )
+From           : 74161:inst1|f74161:sub|110
+To             : ROM64x16:inst4|altsyncram:altsyncram_component|altsyncram_nk71:auto_generated|ram_block1a0~porta_address_reg3
+From Clock     : CLOCK_50
+To Clock       : CLOCK_50
+Failed Paths   : 0
+
+Type           : Slow Model Clock Hold: 'CLOCK_50'
+Slack          : 0.391 ns
+Required Time  : 50.00 MHz ( period = 20.000 ns )
+Actual Time    : N/A
+From           : 74161:inst1|f74161:sub|87
+To             : 74161:inst1|f74161:sub|87
+From Clock     : CLOCK_50
+To Clock       : CLOCK_50
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

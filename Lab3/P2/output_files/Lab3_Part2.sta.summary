@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'CLK'
+Slack : -5.563
+TNS   : -138.240
+
+Type  : Slow 1100mV 85C Model Setup 'BCDCOUNT:inst|ClkFlag'
+Slack : -1.798
+TNS   : -22.155
+
+Type  : Slow 1100mV 85C Model Hold 'CLK'
+Slack : 0.442
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'BCDCOUNT:inst|ClkFlag'
+Slack : 0.819
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -0.538
+TNS   : -30.838
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'BCDCOUNT:inst|ClkFlag'
+Slack : -0.538
+TNS   : -11.105
+
+Type  : Slow 1100mV 0C Model Setup 'CLK'
+Slack : -5.707
+TNS   : -137.496
+
+Type  : Slow 1100mV 0C Model Setup 'BCDCOUNT:inst|ClkFlag'
+Slack : -1.870
+TNS   : -22.267
+
+Type  : Slow 1100mV 0C Model Hold 'CLK'
+Slack : 0.449
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'BCDCOUNT:inst|ClkFlag'
+Slack : 0.806
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -0.538
+TNS   : -31.416
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'BCDCOUNT:inst|ClkFlag'
+Slack : -0.538
+TNS   : -11.050
+
+Type  : Fast 1100mV 85C Model Setup 'CLK'
+Slack : -2.966
+TNS   : -49.592
+
+Type  : Fast 1100mV 85C Model Setup 'BCDCOUNT:inst|ClkFlag'
+Slack : -0.574
+TNS   : -6.105
+
+Type  : Fast 1100mV 85C Model Hold 'CLK'
+Slack : 0.200
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'BCDCOUNT:inst|ClkFlag'
+Slack : 0.320
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -0.345
+TNS   : -3.970
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'BCDCOUNT:inst|ClkFlag'
+Slack : 0.111
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'CLK'
+Slack : -2.691
+TNS   : -43.203
+
+Type  : Fast 1100mV 0C Model Setup 'BCDCOUNT:inst|ClkFlag'
+Slack : -0.500
+TNS   : -5.227
+
+Type  : Fast 1100mV 0C Model Hold 'CLK'
+Slack : 0.191
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'BCDCOUNT:inst|ClkFlag'
+Slack : 0.286
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -0.349
+TNS   : -4.048
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'BCDCOUNT:inst|ClkFlag'
+Slack : 0.122
+TNS   : 0.000
+
+------------------------------------------------------------

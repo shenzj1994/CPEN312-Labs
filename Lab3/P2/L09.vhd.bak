@@ -1,0 +1,32 @@
+LIBRARY ieee;
+USE IEEE.STD_LOGIC_1164.all;
+USE IEEE.STD_LOGIC_ARITH.all;
+USE IEEE.STD_LOGIC_UNSIGNED.all;
+
+ENTITY BCDCOUNT IS
+	port(
+	KEY0, CLK_50 :IN STD_LOGIC;
+	MSD, LSD :OUT STD_LOGIC_VECTOR (0 to 6)
+	);
+END BCDCOUNT;
+
+ARCHITECTURE a of BCDCOUNT is
+	SIGNAL ClkFlag: STD_LOGIC;
+	SIGNAL Internal_Count: STD_LOGIC_VECTOR(28 downto 0);
+	SIGNAL HighDigit, LowDigit: STD_LOGIC_VECTOR(3 downto 0);
+	SIGNAL MSD_7SEG, LSD_7SEG: STD_LOGIC_VECTOR(0 to 6);
+BEGIN
+	LSD<=LSD_7SEG;
+	MSD<=MSD_7SEG;
+	PROCESS(CLK_50)
+	BEGIN
+		if(CLK_50'event and CLK_50='1') then
+			if Internal_Count<25000000 then
+				Internal_Count<=Internal_Count+1;
+			else
+				Internal_Count<=(others => '0');
+				ClkFlag<=not ClkFlag;
+			end if;
+		end if;
+		
+END PROCESS;

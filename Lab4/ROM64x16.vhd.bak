@@ -1,0 +1,94 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+LIBRARY altera_mf;
+USE altera_mf.all;
+
+ENTITY ROM64x16 IS
+	PORT
+	(
+		A, B, C, D, E, F : IN STD_LOGIC;
+		clock		: IN STD_LOGIC  := '1';
+		O15, O14, O13, O12, O11, O10, O9, O8 : OUT STD_LOGIC;
+		O7, O6, O5, O4, O3, O2, O1, O0: OUT STD_LOGIC
+	);
+END ROM64x16;
+
+
+ARCHITECTURE SYN OF rom64x16 IS
+
+	SIGNAL sub_wire0	: STD_LOGIC_VECTOR (15 DOWNTO 0);
+	SIGNAL sub_wire1	: STD_LOGIC_VECTOR (5 DOWNTO 0);
+
+	COMPONENT altsyncram
+	GENERIC (
+		clock_enable_input_a		: STRING;
+		clock_enable_output_a		: STRING;
+		init_file		: STRING;
+		intended_device_family		: STRING;
+		lpm_hint		: STRING;
+		lpm_type		: STRING;
+		numwords_a		: NATURAL;
+		operation_mode		: STRING;
+		outdata_aclr_a		: STRING;
+		outdata_reg_a		: STRING;
+		widthad_a		: NATURAL;
+		width_a		: NATURAL;
+		width_byteena_a		: NATURAL
+	);
+	PORT (
+			clock0	: IN STD_LOGIC ;
+			address_a	: IN STD_LOGIC_VECTOR (5 DOWNTO 0);
+			q_a	: OUT STD_LOGIC_VECTOR (15 DOWNTO 0)
+	);
+	END COMPONENT;
+
+BEGIN
+	
+	O15 <= sub_wire0(15);
+	O14 <= sub_wire0(14);
+	O13 <= sub_wire0(13);
+	O12 <= sub_wire0(12);
+	O11 <= sub_wire0(11);
+	O10 <= sub_wire0(10);
+	O9 <= sub_wire0(9);
+	O8 <= sub_wire0(8);
+	O7 <= sub_wire0(7);
+	O6 <= sub_wire0(6);
+	O5 <= sub_wire0(5);
+	O4 <= sub_wire0(4);
+	O3 <= sub_wire0(3);
+	O2 <= sub_wire0(2);
+	O1 <= sub_wire0(1);
+	O0 <= sub_wire0(0);
+	
+	sub_wire1(0)<=A;
+	sub_wire1(1)<=B;
+	sub_wire1(2)<=C;
+	sub_wire1(3)<=D;
+	sub_wire1(4)<=E;
+	sub_wire1(5)<=F;
+
+	altsyncram_component : altsyncram
+	GENERIC MAP (
+		clock_enable_input_a => "BYPASS",
+		clock_enable_output_a => "BYPASS",
+		init_file => "PSM_Program.mif",
+		intended_device_family => "Stratix II",
+		lpm_hint => "ENABLE_RUNTIME_MOD=NO",
+		lpm_type => "altsyncram",
+		numwords_a => 64,
+		operation_mode => "ROM",
+		outdata_aclr_a => "NONE",
+		outdata_reg_a => "CLOCK0",
+		widthad_a => 6,
+		width_a => 16,
+		width_byteena_a => 1
+	)
+	PORT MAP (
+		clock0 => clock,
+		address_a => sub_wire1,
+		q_a => sub_wire0
+	);
+
+END SYN;

@@ -1,0 +1,35 @@
+# Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus Prime License Agreement,
+# the Altera MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Altera and sold by Altera or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+
+# Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+# File: C:\Users\shenz\OneDrive\UBC-course\2015-2016-WT2\CPEN 312\Lab\Lab3\P2\Lab3_Part2.csv
+# Generated on: Thu Feb 11 23:22:02 2016
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus Prime software.
+
+To,Direction,Location,I/O Bank,VREF Group,Fitter Location,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair,Transceiver Analog Settings Protocol,VCCR_GXB/VCCT_GXB Voltage,Transceiver I/O Pin Termination,Transceiver Dedicated Refclk Pin Termination,Transmitter Common Mode Driver Voltage,Transmitter Slew Rate Control,Transmitter Differential Output Voltage,Receiver Buffer Common Mode Voltage,Strict Preservation
+HEX0[0],Output,PIN_U21,4A,B4A_N0,PIN_E15,,,,,,,,,,,,,,
+HEX0[1],Output,PIN_V21,4A,B4A_N0,PIN_J19,,,,,,,,,,,,,,
+HEX0[2],Output,PIN_W22,4A,B4A_N0,PIN_G16,,,,,,,,,,,,,,
+HEX0[3],Output,PIN_W21,4A,B4A_N0,PIN_AB17,,,,,,,,,,,,,,
+HEX0[4],Output,PIN_Y22,4A,B4A_N0,PIN_A9,,,,,,,,,,,,,,
+HEX0[5],Output,PIN_Y21,4A,B4A_N0,PIN_T8,,,,,,,,,,,,,,
+HEX0[6],Output,PIN_AA22,4A,B4A_N0,PIN_T12,,,,,,,,,,,,,,
+KEY0,Input,,,,PIN_AA18,,,,,,,,,,,,,,
+KEY3,Input,,,,PIN_AB10,,,,,,,,,,,,,,
+SW[3],Input,,,,PIN_U20,,,,,,,,,,,,,,
+SW[2],Input,,,,PIN_M20,,,,,,,,,,,,,,
+SW[1],Input,,,,PIN_E14,,,,,,,,,,,,,,
+SW[0],Input,,,,PIN_K9,,,,,,,,,,,,,,
